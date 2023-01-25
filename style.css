@@ -1,0 +1,159 @@
+.swiper {
+  width: 25rem;
+  height: 18.5rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: -1rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 33px !important;
+  color: #ffff !important;
+  font-weight: bold;
+  background-color: #5a5547;
+  border-radius: 8px;
+  padding: 8px;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 24rem !important;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  pointer-events: auto !important;
+}
+
+.picture__input {
+  display: none;
+}
+
+.dialogFirst {
+  display: none;
+}
+.dialogSecond {
+  display: none;
+}
+
+.dialogThird {
+  display: none;
+}
+
+.picture {
+  width: 25rem;
+  aspect-ratio: 16/9;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  border: 2px dashed #aaa;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.picture:hover {
+  color: #e8e8e8;
+  background-color: #888888;
+}
+
+.picture__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+
+.custom-file-upload:hover {
+  color: white;
+  background-color: #756856;
+  border: 2px solid;
+  border-radius: 0.2rem;
+}
+
+.paginationButton {
+  display: none;
+  border: 2px dashed #aaa;
+  padding: 8px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: #756856;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.paginationButton:focus {
+  outline: none;
+}
+
+.paginationButton:hover {
+  color: white;
+  background-color: #756856;
+  border: 2px solid;
+}
+
+.paginationButton:disabled,
+.paginationButton[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.paginationButton i {
+  font-size: 1.2rem;
+}
+
+.buttons-container i {
+  font-size: 1.2rem;
+}
+
+.isRemoveHandleButton {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  right: 208px;
+  padding: 6px !important;
+  z-index: 1;
+}
+
+.openDialogButton {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  right: 160px;
+  padding: 6px !important;
+  z-index: 1;
+  background-color: #414535;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+  animation: move 5s infinite linear paused both;
+}
+
+dialog {
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  border: 2px dashed #aaa;
+  font-family: sans-serif;
+}
+
+dialog[open] {
+  -webkit-animation: show 0.7s ease normal;
+}
+
+@-webkit-keyframes show {
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
